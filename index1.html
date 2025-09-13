@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/ec6b5797ad.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Weather</title>
+    <link rel="icon" type="image/png" href="summer_15382254.png">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="container px-3 py-5 text-center">
+            <!--! Search Input -->
+            <input type="text" class="w-100 mx-auto rounded-5 py-3 px-4 bg-main-color mb-5 text-white"
+                placeholder="Find your location..." id="search" />
+            <div class="row g-0">
+                <!--! Today Data Section -->
+                <div class="item col-md-4  m-0 rounded-4">
+                    <div class="d-flex justify-content-between py-2 px-3  text-light rounded-start" id="tody-data">
+                        <p class="my-auto color" id="today_data_day_name">sunday</p>
+                        <span>
+                            <span id="today_data_day_number" class="my-auto">30</span>
+                            <span id="today_data_month" class="my-auto">May</span>
+                        </span>
+
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="today_location" class="fs-5">Cairo</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-1 fw-bolder">
+                                <span id="today_temp">20</span>
+                                <span><sub> o</sub> C</span>
+                            </span>
+                            <img id="today_condition_img" src="" alt="">
+                        </div>
+                        <p id="today_condition_text" class="fs-6 text-light-blue">sunny</p>
+                    </div>
+                    <div class="item-footer d-flex text-light p3">
+                        <div class="d-flex me-3">
+                            <img class="footer-icon me-" src="" alt="">
+                            <i class="fa-solid fa-umbrella mx-1 my-1"></i>
+                            <p id="humidity"> 20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <i class="fa-solid fa-wind mx-1 my-1"></i>
+                            <img class=" mx- footer-icon" src="" alt="">
+
+                            <p id="wind"> 30 km/h</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img class=" mx-2 footer-icon" src="" alt="">
+
+                            <p id="windDirection"> 30 km/h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--! Tomorrow Data Section -->
+                <div class="item col-md-4 m-0  rounded-4">
+                    <div class="py-2 text-center px-3 text-light ">
+                        <p class="my-auto tomorrow_day_name">Thursday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img src="" class="tomorrow_condition_img" alt="">
+                        <h3>
+                            <span class="tomorrow_max_temp"></span>
+                            <span><sub>o</sub>C</span>
+                        </h3>
+                        <h5 class="text-muted fw-bolder  ">
+                            <span class="tomorrow_min_temp">15</span>
+                            <span><sup>o</sup>C</span>
+                        </h5>
+                        <p class="tomorrow_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+                <!--! After Tomorrow Data Section -->
+                <div class="item col-md-4 m-0  rounded-4">
+                    <div class="py-2 text-center px-3  text-light rounded-end">
+                        <p class="my-auto tomorrow_day_name">Friday</p>
+                    </div>
+                    <div class="item-content text-start text-light p-3 text-center pt-5">
+                        <img src="" class="tomorrow_condition_img" alt="">
+                        <h3>
+                            <span class="tomorrow_max_temp"></span>
+                            <span><sub>o</sub>C</span>
+                        </h3>
+                        <h5 class="text-muted fw-bolder">
+                            <span class="tomorrow_min_temp">15</span>
+                            <span><sup>o</sup>C</span>
+                        </h5>
+                        <p class="tomorrow_condition_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main1.js"></script>
+</body>
+
+</html>

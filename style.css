@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.app-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("city.jpg") no-repeat center center/cover;
+      min-height: 100vh;
+}
+/* ====== search ====== */
+.bg-main-color {
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: solid #fff;
+  border: none;
+}
+#search:focus-visible {
+  outline: none;
+}
+  /* ====== Today Data Section ====== */
+sub {
+  font-size: 0.6em;
+  vertical-align:top;
+}
+.text-light-blue :muted{ 
+    color: #00bfff !important;
+}
+.item .text-muted {
+  --bs-text-opacity: 1;
+  color: rgba(120, 148, 177, 0.75) !important;
+}
